@@ -1,0 +1,32 @@
+{
+  "homepage": "https://mufratkarim.github.io",
+  "name": "Mufrat's Website",
+  "version": "1.0.1",
+  "private": "true",
+  "description": "This is the website of Mufrat Aritra",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mufratkarim/mufratkarim.github.io"
+  },
+  "keywords": [],
+  "author": "Mufrat Aritra",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2",
+    "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "plyr": "^3.7.8",
+    "popper.js": "^1.16.1",
+    "swiper": "^10.3.1",
+    "vanilla-tilt": "^1.8.0"
+  }
+}
