@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  <base href="/" />
+  <base href="/">
   <title>Mufrat's Website</title>
   <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
   <meta name="keywords" content="mufratkarim, Mufrat Aritra, Kotlin, Java, JavaScript, Swift">
@@ -32,11 +32,14 @@
         Welcome
         <p class="hero-subtitle">
           This is
-          <span class="text-color-main">Mufrat Aritra</span>. You can call me
-          <span class="text-color-main">Mufrat</span>.
+          <span class="text-color-main">Mufrat Aritra</span>
+          . You can call me
+          <span class="text-color-main">Mufrat</span>
+          .
           <br>
           I build
-          <span class="text-color-main">Mobile Apps and Websites</span>.
+          <span class="text-color-main">Mobile Apps and Websites</span>
+          .
           <br>
       </h1>
       <p class="hero-cta load-hidden">
@@ -68,9 +71,17 @@
           <div class="about-wrapper__info load-hidden">
             <p class="about-wrapper__info-text"></p>
             <span class="d-flex mt-3">
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="assets/resume.pdf">
-                View Resume
-              </a>
+              <div>
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" id="playStoreProfileLink">
+                  Play Store
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" id="appleStoreProfileLink">
+                  Apple Store
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="assets/resume.pdf">
+                  Resume
+                </a>
+              </div>
             </span>
           </div>
         </div>
@@ -91,12 +102,10 @@
               <div class="moviemateDesc">
                 <p class="mb-4"></p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://apps.apple.com/us/app/movie-mate-stream-trailers/id6445921143">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" id="moviemateiOSLink">
                 iOS
               </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://play.google.com/store/apps/details?id=com.mka.moviemate">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" id="moviemateAndroidLink">
                 Android
               </a>
             </div>
@@ -123,7 +132,7 @@
               <div class="newspaperDesc">
                 <p class="mb-4"></p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" id="newspaper">
                 GitHub
               </a>
             </div>
@@ -133,15 +142,15 @@
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
-                    <div>
-                      <!-- Add this Plyr video component -->
-                      <video controls class="player" style="max-height: 500px;">
-                        <source src="./assets/wsj.mp4" type="video/mp4">
-                        <!-- Fallback for browsers that don't support the video tag -->
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/mufratkarim/Artificial-Newspapers/tree/main/Wall%20Street%20Journal">
+                  <div>
+                    <!-- Add this Plyr video component -->
+                    <video controls class="player" style="max-height: 500px;">
+                      <source src="./assets/wsj.mp4" type="video/mp4">
+                      <!-- Fallback for browsers that don't support the video tag -->
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="wsj">
                     The Wall Street Journal
                   </a>
                 </div>
@@ -155,7 +164,7 @@
                       Your browser does not support the video tag.
                     </video>
                   </div>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/mufratkarim/Artificial-Newspapers/tree/main/The%20New%20York%20Times">
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="nytimes">
                     New York Times
                   </a>
                 </div>
@@ -169,7 +178,7 @@
                       Your browser does not support the video tag.
                     </video>
                   </div>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/mufratkarim/Artificial-Newspapers/tree/main/Daily%20Prophet">
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="dailyprophet">
                     Daily Prophet
                   </a>
                 </div>
@@ -188,8 +197,7 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Android Apps</h3>
               <div class="androidAppsDesc"></div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://github.com/stars/mufratkarim/lists/android-apps">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" id="androidApps">
                 GitHub
               </a>
             </div>
@@ -199,66 +207,51 @@
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://github.com/mufratkarim/CleanCrypto" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="World Cup Gif" class="img-fluid" src="assets/world-cup.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://github.com/mufratkarim/CleanCrypto">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="World Cup Gif" class="img-fluid" src="assets/world-cup.gif">
+                  </div>
+                  <a rel="noreferrer" id="worldCup" target="_blank" class="cta-btn text-color-main">
                     World Cup 2022 Tracker
                   </a>
                 </div>
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://github.com/mufratkarim/CleanCrypto" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="Clean Crypto Gif" class="img-fluid" src="assets/clean-crypto.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://github.com/mufratkarim/CleanCrypto">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Clean Crypto Gif" class="img-fluid" src="assets/clean-crypto.gif">
+                  </div>
+                  <a rel="noreferrer" id="cleanCrypto" target="_blank" class="cta-btn text-color-main">
                     Clean Crypto
                   </a>
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://github.com/mufratkarim/National-Park-Service-Lite" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="National Park Service Gif" class="img-fluid" src="assets/American Parks.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://github.com/mufratkarim/National-Park-Service-Lite">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="National Park Service Gif" class="img-fluid" src="assets/American Parks.gif">
+                  </div>
+                  <a rel="noreferrer" id="nationalpark" target="_blank" class="cta-btn text-color-main">
                     National Park Service
                   </a>
                 </div>
                 <!-- Slide 4 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://github.com/mufratkarim/Trivia" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="Trivia Gif" class="img-fluid" src="assets/trivia.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://github.com/mufratkarim/Trivia">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Trivia Gif" class="img-fluid" src="assets/trivia.gif">
+                  </div>
+                  <a rel="noreferrer" id="trivia" target="_blank" class="cta-btn text-color-main">
                     Trivia
                   </a>
                 </div>
                 <!-- Slide 5 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://github.com/mufratkarim/Memory-Locker" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="Memory Locker Gif" class="img-fluid" src="assets/Memory Locker.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://github.com/mufratkarim/Memory-Locker">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Memory Locker Gif" class="img-fluid" src="assets/Memory Locker.gif">
+                  </div>
+                  <a rel="noreferrer" id="memorylocker" target="_blank" class="cta-btn text-color-main">
                     Memory Locker
                   </a>
                 </div>
@@ -276,8 +269,7 @@
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">iOS Projects</h3>
               <div class="iosAppsDesc"></div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://github.com/stars/mufratkarim/lists/ios-apps">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" id="iosApps">
                 GitHub
               </a>
             </div>
@@ -287,40 +279,31 @@
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://github.com/mufratkarim/SwiftStorm" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="Swift Storm Gif" class="img-fluid" src="assets/SwiftStormDemo.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://github.com/mufratkarim/SwiftStorm">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Swift Storm Gif" class="img-fluid" src="assets/SwiftStormDemo.gif">
+                  </div>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="swiftstorm">
                     Swift Storm
                   </a>
                 </div>
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://github.com/mufratkarim/Secret-Messenger" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="Secret Messenger Gif" class="img-fluid" src="assets/SecretMessengerDemo.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://github.com/mufratkarim/Secret-Messenger">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Secret Messenger Gif" class="img-fluid" src="assets/SecretMessengerDemo.gif">
+                  </div>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="secretmessenger">
                     Secret Messenger
                   </a>
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://github.com/mufratkarim/Hacker-News-Log" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="Hacker News Log Gif" class="img-fluid" src="assets/HackerNewsLogDemo.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://github.com/mufratkarim/Hacker-News-Log">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Hacker News Log Gif" class="img-fluid" src="assets/HackerNewsLogDemo.gif">
+                  </div>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="hackerNewsLog">
                     Hacker News Log
                   </a>
                 </div>
@@ -350,40 +333,31 @@
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://www.thecitytutors.org/" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="The City Tutors Photo" class="img-fluid" src="assets/city-tutors.jpeg">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://www.thecitytutors.org/">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="The City Tutors Photo" class="img-fluid" src="assets/city-tutors.jpeg">
+                  </div>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="citytutors">
                     The City Tutors
                   </a>
                 </div>
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://mufratkarim.github.io/sorting-visualizer/" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="Sorting Visualizer Gif" class="img-fluid" src="assets/sorting-visualizer.gif">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://mufratkarim.github.io/sorting-visualizer/">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Sorting Visualizer Gif" class="img-fluid" src="assets/sorting-visualizer.gif">
+                  </div>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="sortingvisualizer">
                     Sorting Visualizer
                   </a>
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
-                  <a rel="noreferrer" href="https://mufratkarim.github.io/RGB-Color-Game-Project/" target="_blank">
-                    <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt">
-                      <img alt="RGB Colorgame Photo" class="img-fluid" src="assets/rgbColorGame.png">
-                    </div>
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                    href="https://mufratkarim.github.io/RGB-Color-Game-Project/">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="RGB Colorgame Photo" class="img-fluid" src="assets/rgbColorGame.png">
+                  </div>
+                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" id="rgbProject">
                     RGB Colorgame Project
                   </a>
                 </div>
@@ -420,10 +394,10 @@
         <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
       </a>
       <div class="social-links">
-        <a rel="noreferrer" href="https://www.linkedin.com/in/mufrat-karim-aritra/" target="_blank">
+        <a rel="noreferrer" id="Linkedin" target="_blank">
           <i class="fa fa-linkedin fa-inverse"></i>
         </a>
-        <a rel="noreferrer" href="https://github.com/mufratkarim" target="_blank">
+        <a rel="noreferrer" id="Github" target="_blank">
           <i class="fa fa-github fa-inverse"></i>
         </a>
       </div>
