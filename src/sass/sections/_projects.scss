@@ -17,28 +17,26 @@
   
   .project-wrapper {
     margin-bottom: 15rem;
-
+    z-index: -2;
+    
+    
         // Swiper styles start here
         .swiper-container {
-          max-width: 500px;
-          height: auto;
+          width: 100%; // Ensure the container takes the full width of the parent
+          height: auto; // Set to auto for dynamic height based on content
+          overflow: hidden; // Hide overflowing slides
         }
-    
+        
+        .swiper-wrapper {
+          display: flex; // Align slides horizontally
+          flex-direction: row; // Ensures slides line up in a row
+        }
+        
         .swiper-slide {
-          background-color: transparent;
-          overflow: hidden;
-          max-height: 700px;
-          video {
-            display: block;
-            width: 100%;
-          }
-          
-          img {
-            display: block;
-            width: auto;
-            margin: auto;
-            max-height: 500px;
-          }
+          flex: 0 0 auto; // Prevent slides from shrinking
+          width: 200px; // Explicitly set a width
+          height: 700px; // Explicitly set a height
+          // ... Your existing styles
         }
     
         .swiper-button-next, .swiper-button-prev {
